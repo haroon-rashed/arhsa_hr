@@ -1,0 +1,62 @@
+:root{
+    --blue:#37517E;
+}
+.front{
+    background-color: var(--blue);
+}
+.front a{
+color: white !important;
+}
+.anim-img{
+    animation: drop-down 1s  linear infinite alternate;
+}
+@keyframes drop-down {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+    
+}
+.gray{
+    width: 100%;
+    position: relative;
+    height: 2px;
+    margin: auto;
+    background-color: gray;
+    border-radius: 20px;
+}
+.blue{
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    height: 6px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    background-color: var(--blue);
+}
+.about{
+    color: var(--blue);
+}
+.max-content{
+    width: max-content;
+    margin: auto;
+}
+.text-blue{
+    color: var(--blue);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.card{
+    border: none !important;
+    padding: 1.5rem !important;
+}
+.card:hover{
+    transform: scale(1.07);
+    transition: all .3s;
+}
