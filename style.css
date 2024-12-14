@@ -1,25 +1,36 @@
-:root{
-    --blue:#37517E;
+:root {
+    --blue: #37517E;
 }
-.front{
+:root{
+    --light-dark :#F3F5FA;
+}
+
+.front {
     background-color: var(--blue);
 }
-.front a{
-color: white !important;
+.bg-light-dark{
+    background-color: var(--light-dark);
 }
-.anim-img{
-    animation: drop-down 1s  linear infinite alternate;
+.front a {
+    color: white !important;
 }
+
+.anim-img {
+    animation: drop-down 1s linear infinite alternate;
+}
+
 @keyframes drop-down {
-    from{
+    from {
         transform: translateY(0);
     }
-    to{
+
+    to {
         transform: translateY(-20px);
     }
-    
+
 }
-.gray{
+
+.gray {
     width: 100%;
     position: relative;
     height: 2px;
@@ -27,7 +38,8 @@ color: white !important;
     background-color: gray;
     border-radius: 20px;
 }
-.blue{
+
+.blue {
     width: 50%;
     margin: auto;
     position: absolute;
@@ -36,27 +48,74 @@ color: white !important;
     top: 50%;
     left: 50%;
     border-radius: 20px;
-    transform: translate(-50%,-50%);
-    background-color: var(--blue);
+    transform: translate(-50%, -50%);
+    background-color: #47B2E4;
 }
-.about{
+
+.about {
     color: var(--blue);
 }
-.max-content{
+
+.max-content {
     width: max-content;
     margin: auto;
 }
-.text-blue{
+
+.text-blue {
     color: var(--blue);
 }
-.bg-blue{
+
+.bg-blue {
     background-color: var(--blue);
 }
-.card{
+
+.card {
     border: none !important;
     padding: 1.5rem !important;
 }
-.card:hover{
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: all 3s;
+}
+
+.parallax-effect{
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)) 0% 0% / cover, url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg") center center fixed;
+}
+
+.image-parent{
+    overflow: hidden;
+}
+.img-text{
+    bottom: 0px;
+    transform: translateY(80px);
+    transition: all 0.2s ease-out;
+}
+.image-parent:hover .img-text{
+transform: translateY(0);
+}
+.image{
+
+}
+.image:hover{
     transform: scale(1.07);
     transition: all .3s;
+}
+
+
+
+
+@media (max-width:760px) {
+    .my-img{
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    .my-text{
+        text-align: center;
+    }
+    .my-hr{
+        margin: auto !important;
+    }
+    
 }

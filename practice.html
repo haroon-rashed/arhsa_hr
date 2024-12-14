@@ -83,4 +83,28 @@
                 </div>
               </div>
 </body>
-</html>
+</html>.effect {
+  position: relative;
+}
+
+.parallax-effect {
+  height: 700px;
+  background-image: url('https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+.parallax-effect .row {
+  z-index: 1;
+  position: relative;
+}
+.parallax-effect::before {
+  content: "";
+  background:color-mix(in srgb, #37517e, transparent 35%);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
