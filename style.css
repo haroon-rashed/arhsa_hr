@@ -88,7 +88,7 @@
 }
 .img-text{
     bottom: 0px;
-    transform: translateY(80px);
+    transform: translateY(90px);
     transition: all 0.2s ease-out;
 }
 .image-parent:hover .img-text{
